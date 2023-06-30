@@ -1,0 +1,17 @@
+<ag-grid-angular
+    #myGrid
+    style="height: 500px;"
+    class="ag-theme-balham"
+
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [gridOptions]="gridOptions"
+    [cacheOverflowSize]="cacheOverflowSize"
+    [maxConcurrentDatasourceRequests]="maxConcurrentDatasourceRequests"
+    [infiniteInitialRowCount]="infiniteInitialRowCount"
+    [pagination]=true
+
+    (gridReady)="onGridReady($event)"
+    (paginationChanged)="onPaginationChanged()"
+>
+</ag-grid-angular>
